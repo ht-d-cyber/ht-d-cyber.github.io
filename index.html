@@ -4,274 +4,286 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Félix Kodji — Psychologie du travail et des organisations, action humanitaire, protection de l'enfance et développement communautaire à Maroua, Cameroun.">
-  <meta name="author" content="Félix Kodji">
-  <meta name="keywords" content="Félix Kodji, psychologie, psychologie du travail, humanitaire, protection de l'enfance, Good Neighbors Cameroon, Maroua, Cameroun">
-
   <title>Félix Kodji | Psychologie, Humanitaire et Protection de l'enfance</title>
+
+  <meta name="description" content="Félix Kodji, professionnel camerounais de l'action humanitaire et titulaire d'un Master en psychologie du travail et des organisations. Expérience en suivi de terrain, protection de l'enfance et développement communautaire.">
+
+  <meta name="author" content="Félix Kodji">
+
+  <meta name="keywords" content="Félix Kodji, psychologie, psychologie du travail, psychologie des organisations, humanitaire, protection de l'enfance, développement communautaire, Good Neighbors Cameroon, OMS, Maroua, Cameroun">
 
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
       scroll-behavior: smooth;
     }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
       line-height: 1.7;
-      color: #243447;
-      background: #ffffff;
+      color: #263238;
+      background: #f4f7f9;
     }
 
     a {
-      text-decoration: none;
-      color: #1769aa;
+      color: inherit;
     }
 
-    a:hover {
-      text-decoration: underline;
+    header {
+      background: linear-gradient(135deg, #0b4f71, #1479a6);
+      color: white;
+      padding: 60px 20px;
     }
 
-    /* NAVIGATION */
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: #102a43;
-      padding: 14px 10px;
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 45px;
+      flex-wrap: wrap;
+    }
+
+    .photo-container {
       text-align: center;
     }
 
-    nav a {
-      color: white;
-      font-weight: bold;
-      margin: 0 8px;
-      font-size: 14px;
-    }
-
-    /* ACCUEIL */
-    .hero {
-      background: linear-gradient(135deg, #102a43, #1769aa);
-      color: white;
-      padding: 70px 20px;
-    }
-
-    .hero-content {
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 230px 1fr;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .photo-principale {
+    .photo-container img {
       width: 230px;
       height: 280px;
       object-fit: cover;
-      border-radius: 20px;
+      border-radius: 18px;
       border: 5px solid white;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
     }
 
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+    .hero-text {
+      max-width: 650px;
     }
 
-    .hero h2 {
-      color: white;
+    .hero-text h1 {
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+
+    .hero-text h2 {
       font-size: 22px;
       font-weight: normal;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
+      color: #e4f5fb;
     }
 
-    .badges {
+    .hero-text p {
+      font-size: 17px;
+      color: #f1f8fb;
+    }
+
+    nav {
+      background: #ffffff;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      max-width: 1100px;
+      margin: auto;
+      list-style: none;
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
-      gap: 10px;
     }
 
-    .badge {
-      border: 1px solid rgba(255,255,255,0.5);
-      background: rgba(255,255,255,0.1);
-      padding: 7px 12px;
-      border-radius: 20px;
-      font-size: 14px;
-    }
-
-    .bouton {
-      display: inline-block;
-      margin-top: 25px;
-      background: white;
-      color: #102a43;
-      padding: 12px 20px;
-      border-radius: 8px;
+    nav a {
+      display: block;
+      padding: 16px 18px;
+      text-decoration: none;
+      color: #174b63;
       font-weight: bold;
     }
 
-    /* SECTIONS */
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 65px 20px;
+    nav a:hover {
+      background: #eaf5f9;
     }
 
-    section:nth-of-type(even) {
-      background: #f5f8fb;
-      max-width: none;
-      padding-left: calc((100% - 1060px) / 2);
-      padding-right: calc((100% - 1060px) / 2);
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 30px;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
     }
 
     section h2 {
-      color: #102a43;
-      font-size: 32px;
-      margin-bottom: 25px;
+      color: #0b5c7d;
+      font-size: 28px;
+      margin-bottom: 22px;
+      border-left: 5px solid #1496c8;
+      padding-left: 12px;
     }
 
     section h3 {
-      color: #1769aa;
+      color: #174b63;
+      margin-top: 25px;
       margin-bottom: 8px;
+      font-size: 21px;
     }
 
     p {
-      margin-bottom: 18px;
+      margin-bottom: 15px;
     }
 
-    /* CARTES */
-    .grille {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
+    .intro {
+      font-size: 18px;
     }
 
-    .carte {
-      background: white;
-      border: 1px solid #e1e8ef;
-      border-radius: 14px;
-      padding: 24px;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.05);
-    }
-
-    /* PARCOURS */
     .timeline {
-      border-left: 3px solid #1769aa;
+      border-left: 3px solid #1496c8;
       padding-left: 25px;
     }
 
     .timeline-item {
-      margin-bottom: 30px;
+      margin-bottom: 28px;
       position: relative;
     }
 
     .timeline-item::before {
       content: "";
       position: absolute;
-      left: -34px;
-      top: 7px;
       width: 13px;
       height: 13px;
-      background: #1769aa;
+      background: #1496c8;
       border-radius: 50%;
-      border: 3px solid white;
-      box-shadow: 0 0 0 2px #1769aa;
+      left: -33px;
+      top: 8px;
     }
 
     .date {
-      color: #1769aa;
       font-weight: bold;
+      color: #0b6c92;
+      margin-bottom: 4px;
     }
 
-    /* COMPÉTENCES */
-    .competences {
+    .skills {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
     }
 
-    .competence {
-      background: #eaf3fb;
-      color: #15527e;
-      padding: 8px 13px;
-      border-radius: 20px;
+    .skill {
+      background: #eaf5f9;
+      color: #15536b;
+      padding: 9px 14px;
+      border-radius: 30px;
       font-size: 14px;
+      font-weight: bold;
     }
 
-    /* PHOTOS */
-    .galerie {
+    .contact-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: 15px;
     }
 
-    .galerie img {
-      width: 100%;
-      height: 350px;
-      object-fit: cover;
-      border-radius: 15px;
-      box-shadow: 0 7px 20px rgba(0,0,0,0.12);
+    .contact-card {
+      background: #f1f7f9;
+      padding: 18px;
+      border-radius: 10px;
     }
 
-    /* CONTACT */
-    .contact {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+    .contact-card strong {
+      display: block;
+      color: #0b5c7d;
+      margin-bottom: 5px;
     }
 
-    .contact .carte {
-      min-height: 120px;
+    .contact-card a {
+      color: #126b91;
+      text-decoration: none;
+      word-break: break-word;
     }
 
-    /* FOOTER */
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+
+    .linkedin {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #0a66c2;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     footer {
-      background: #0b1f33;
+      background: #123746;
       color: white;
       text-align: center;
-      padding: 30px 20px;
+      padding: 28px 20px;
+      margin-top: 20px;
     }
 
-    /* MOBILE */
-    @media (max-width: 750px) {
+    footer p {
+      margin: 5px 0;
+    }
 
-      .hero-content {
-        grid-template-columns: 1fr;
+    @media (max-width: 700px) {
+      header {
+        padding: 40px 18px;
+      }
+
+      .hero {
+        gap: 25px;
+      }
+
+      .photo-container img {
+        width: 190px;
+        height: 230px;
+      }
+
+      .hero-text {
         text-align: center;
       }
 
-      .photo-principale {
-        margin: auto;
+      .hero-text h1 {
+        font-size: 34px;
       }
 
-      .hero h1 {
-        font-size: 38px;
+      .hero-text h2 {
+        font-size: 18px;
       }
 
-      .badges {
-        justify-content: center;
+      section {
+        padding: 25px 20px;
       }
 
-      .grille,
-      .contact,
-      .galerie {
+      section h2 {
+        font-size: 24px;
+      }
+
+      .contact-grid {
         grid-template-columns: 1fr;
       }
 
-      section:nth-of-type(even) {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-
       nav a {
-        display: inline-block;
-        margin: 4px 5px;
-      }
-
-      .galerie img {
-        height: 300px;
+        padding: 12px 10px;
+        font-size: 14px;
       }
     }
   </style>
@@ -279,579 +291,276 @@
 
 <body>
 
-  <!-- MENU -->
-  <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#apropos">À propos</a>
-    <a href="#formation">Formation</a>
-    <a href="#experience">Expérience</a>
-    <a href="#competences">Compétences</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header>
+  <div class="hero">
 
-
-  <!-- ACCUEIL -->
-  <header class="hero" id="accueil">
-
-    <div class="hero-content">
-
-      <img
-        src="photo-felix-kodji.jpg"
-        alt="Portrait professionnel de Félix Kodji"
-        class="photo-principale"
-      >
-
-      <div>
-
-        <h1>Félix Kodji</h1>
-
-        <h2>
-          Psychologie du travail et des organisations |
-          Action humanitaire |
-          Protection de l'enfance
-        </h2>
-
-        <div class="badges">
-          <span class="badge">Assistant Programme</span>
-          <span class="badge">Good Neighbors Cameroon</span>
-          <span class="badge">Maroua, Cameroun</span>
-        </div>
-
-        <a href="#contact" class="bouton">
-          Me contacter
-        </a>
-
-      </div>
-
+    <div class="photo-container">
+      <img src="photo-Félix-Kodji.png" alt="Félix Kodji">
     </div>
 
-  </header>
+    <div class="hero-text">
+      <h1>Félix Kodji</h1>
 
+      <h2>
+        Action humanitaire • Psychologie • Protection de l'enfance
+      </h2>
 
-  <!-- À PROPOS -->
+      <p>
+        Professionnel camerounais de l'action humanitaire et titulaire
+        d'un Master en psychologie du travail et des organisations,
+        engagé dans le suivi de terrain, la protection de l'enfance
+        et le développement communautaire.
+      </p>
+    </div>
+
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#apropos">À propos</a></li>
+    <li><a href="#formation">Formation</a></li>
+    <li><a href="#experience">Expérience</a></li>
+    <li><a href="#competences">Compétences</a></li>
+    <li><a href="#perspectives">Perspectives</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
   <section id="apropos">
+    <h2>À propos de moi</h2>
 
-    <h2>Biographie professionnelle</h2>
-
-    <p>
+    <p class="intro">
       Félix Kodji est un professionnel camerounais de l'action humanitaire
-      et de la psychologie, spécialisé dans la protection de l'enfance et
-      le développement communautaire.
+      et de la psychologie, particulièrement intéressé par la protection
+      de l'enfance et le développement communautaire.
     </p>
 
     <p>
-      Porté par la conviction que la compréhension de l'être humain constitue
-      un levier essentiel pour accompagner efficacement les communautés,
-      il consacre son parcours au bien-être des populations vulnérables.
+      Porté par la conviction que la compréhension de l'être humain
+      constitue un élément essentiel pour accompagner efficacement
+      les communautés, il consacre son parcours au bien-être des
+      populations et au développement de ses compétences professionnelles.
     </p>
 
     <p>
-      Originaire de Rhumzou, Félix Kodji y effectue une partie importante
-      de son parcours scolaire avant de poursuivre ses études à l'Université
-      de Maroua.
+      Originaire de Rhumzou, il effectue une grande partie de son
+      parcours scolaire dans cette localité avant de poursuivre ses
+      études universitaires à l'Université de Maroua.
     </p>
-
-    <p>
-      En mars 2025, il obtient son Master en Psychologie du travail et des
-      organisations, consolidant ainsi ses connaissances dans l'analyse
-      des dynamiques humaines et organisationnelles.
-    </p>
-
-    <p>
-      Son parcours professionnel dans le secteur humanitaire comprend des
-      expériences de mobilisation communautaire, de monitorage, de
-      suivi-évaluation, de collecte de données et de coordination avec
-      différents acteurs locaux.
-    </p>
-
-    <p>
-      Depuis octobre 2024, il est engagé au sein de Good Neighbors Cameroon
-      dans le département des services du parrainage. En avril 2026, il obtient
-      un contrat professionnel comme Assistant Programme au sein de ce département.
-    </p>
-
-    <p>
-      Il poursuit son développement professionnel dans les domaines de la
-      psychologie, de la protection de l'enfance et de l'action humanitaire,
-      avec l'ambition de contribuer à des programmes durables et inclusifs.
-    </p>
-
   </section>
 
 
-  <!-- FORMATION -->
   <section id="formation">
-
-    <h2>Formation académique</h2>
+    <h2>Formation et parcours académique</h2>
 
     <div class="timeline">
 
       <div class="timeline-item">
+        <div class="date">2012</div>
+        <h3>Certificat d'études primaires</h3>
+        <p>
+          École privée catholique de Rhumzou.
+        </p>
+      </div>
 
+      <div class="timeline-item">
+        <div class="date">2012 – 2019</div>
+        <h3>Lycée de Rhumzou</h3>
+        <p>
+          Parcours secondaire sanctionné par l'obtention du baccalauréat.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="date">2019 – 2025</div>
+        <h3>Université de Maroua</h3>
+        <p>
+          Études en psychologie.
+        </p>
+      </div>
+
+      <div class="timeline-item">
         <div class="date">Mars 2025</div>
-
-        <h3>
-          Master II en Psychologie du travail et des organisations
-        </h3>
-
+        <h3>Master en psychologie du travail et des organisations</h3>
         <p>
-          Université de Maroua
+          Obtention du Master en psychologie du travail et des organisations,
+          avec une formation portant notamment sur les dynamiques humaines
+          et le fonctionnement des organisations.
         </p>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <div class="date">Parcours universitaire</div>
-
-        <h3>
-          Licence en Psychologie sociale et expérimentale
-        </h3>
-
-        <p>
-          Université de Maroua
-        </p>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <div class="date">Parcours secondaire</div>
-
-        <h3>
-          Baccalauréat A4
-        </h3>
-
-        <p>
-          Lycée de Mogodé
-        </p>
-
-      </div>
-
-
-      <div class="timeline-item">
-
-        <div class="date">Formation complémentaire</div>
-
-        <h3>
-          Ingénierie en informatique et télécom
-        </h3>
-
-        <p>
-          Option réseaux informatiques — ISS de Maroua
-        </p>
-
       </div>
 
     </div>
-
   </section>
 
 
-  <!-- EXPÉRIENCE -->
   <section id="experience">
+    <h2>Expérience humanitaire et professionnelle</h2>
 
-    <h2>Expérience professionnelle et humanitaire</h2>
+    <div class="timeline">
 
-    <div class="grille">
-
-
-      <div class="carte">
-
-        <div class="date">
-          Depuis avril 2026
-        </div>
-
-        <h3>
-          Assistant Programme — Good Neighbors Cameroon
-        </h3>
-
+      <div class="timeline-item">
+        <div class="date">Depuis 2021</div>
+        <h3>Organisation mondiale de la Santé (OMS)</h3>
         <p>
-          Département des services du parrainage, bureau de Maroua.
+          Expérience en qualité de moniteur indépendant dans le domaine
+          humanitaire, avec des activités de suivi et d'observation
+          sur le terrain.
         </p>
-
-        <p>
-          Contribution à la gestion opérationnelle des activités de
-          parrainage, au suivi des enfants et des familles, à la
-          coordination des acteurs et à la préparation des rapports.
-        </p>
-
       </div>
 
-
-      <div class="carte">
-
-        <div class="date">
-          Depuis octobre 2024
-        </div>
-
-        <h3>
-          Volontaire — Good Neighbors Cameroon
-        </h3>
-
+      <div class="timeline-item">
+        <div class="date">2024</div>
+        <h3>Superviseur des moniteurs indépendants</h3>
         <p>
-          Participation aux visites de terrain, au suivi des enfants
-          parrainés, aux activités communautaires, à la collecte et à
-          l'analyse des données, à la logistique et à la documentation
-          des activités du programme de parrainage.
+          Évolution vers des responsabilités de supervision des
+          moniteurs indépendants.
         </p>
-
       </div>
 
-
-      <div class="carte">
-
-        <div class="date">
-          2024
-        </div>
-
-        <h3>
-          Superviseur Moniteur Indépendant — OMS Cameroun
-        </h3>
-
+      <div class="timeline-item">
+        <div class="date">Octobre 2024</div>
+        <h3>Good Neighbors Cameroon</h3>
         <p>
-          Planification des descentes sur le terrain, coordination avec
-          les acteurs locaux et sanitaires, supervision du monitorage
-          et rédaction des rapports d'activité.
+          Intégration en tant que volontaire permanent au sein du
+          département de parrainage.
         </p>
 
+        <p>
+          Cette expérience permet de développer davantage son intérêt
+          et ses compétences dans le domaine de la protection de
+          l'enfance et de l'accompagnement des communautés.
+        </p>
       </div>
 
-
-      <div class="carte">
-
-        <div class="date">
-          Mai 2023
-        </div>
-
-        <h3>
-          Moniteur Indépendant — OMS Cameroun
-        </h3>
-
+      <div class="timeline-item">
+        <div class="date">Avril 2026 – Aujourd'hui</div>
+        <h3>Assistant Programme – Good Neighbors Cameroon</h3>
         <p>
-          Monitorage des ménages en rapport avec la vaccination des
-          enfants de moins de cinq ans contre la poliomyélite.
+          Obtention de son premier contrat professionnel en tant
+          qu'Assistant Programme au sein du département de parrainage.
         </p>
 
         <p>
-          Utilisation d'ODK Collect, participation aux réunions
-          d'évaluation et rédaction des rapports d'activité.
+          Il contribue actuellement aux activités liées aux programmes
+          de parrainage et au suivi des actions menées auprès des
+          enfants, des familles et des communautés.
         </p>
-
-      </div>
-
-
-      <div class="carte">
-
-        <div class="date">
-          Février — Juin 2021
-        </div>
-
-        <h3>
-          Mobilisateur communautaire — INTERSOS
-        </h3>
-
-        <p>
-          Contribution au renforcement de la résilience des personnes
-          vulnérables, notamment les personnes déplacées internes,
-          les réfugiés et les communautés d'accueil.
-        </p>
-
-      </div>
-
-
-      <div class="carte">
-
-        <div class="date">
-          Novembre 2020 — Octobre 2024
-        </div>
-
-        <h3>
-          Secrétaire — Secrétariat LAUREAT SERVICE
-        </h3>
-
-        <p>
-          Saisie et traitement de documents, gestion administrative,
-          traitement des données, appui aux travaux académiques et
-          utilisation des outils bureautiques.
-        </p>
-
       </div>
 
     </div>
-
   </section>
 
 
-  <!-- COMPÉTENCES -->
   <section id="competences">
+    <h2>Compétences et domaines d'intérêt</h2>
 
-    <h2>Compétences</h2>
+    <p>
+      Son parcours lui permet de développer des compétences dans
+      plusieurs domaines liés à la psychologie, à l'action humanitaire
+      et au travail communautaire.
+    </p>
 
-    <div class="competences">
+    <div class="skills">
 
-      <span class="competence">
-        Psychologie du travail et des organisations
-      </span>
-
-      <span class="competence">
-        Protection de l'enfance
-      </span>
-
-      <span class="competence">
-        Gestion de projets sociaux
-      </span>
-
-      <span class="competence">
-        Suivi-évaluation
-      </span>
-
-      <span class="competence">
-        Collecte et analyse des données
-      </span>
-
-      <span class="competence">
-        ODK Collect
-      </span>
-
-      <span class="competence">
-        KoBoCollect
-      </span>
-
-      <span class="competence">
-        SPSS
-      </span>
-
-      <span class="competence">
-        XLSTAT
-      </span>
-
-      <span class="competence">
-        Microsoft Excel
-      </span>
-
-      <span class="competence">
-        Microsoft Word
-      </span>
-
-      <span class="competence">
-        PowerPoint
-      </span>
-
-      <span class="competence">
-        Coordination
-      </span>
-
-      <span class="competence">
-        Mobilisation communautaire
-      </span>
-
-      <span class="competence">
-        Gestion de cas
-      </span>
-
-      <span class="competence">
-        Médiation et gestion des conflits
-      </span>
-
-      <span class="competence">
-        Leadership et travail d'équipe
-      </span>
+      <span class="skill">Psychologie du travail</span>
+      <span class="skill">Psychologie des organisations</span>
+      <span class="skill">Action humanitaire</span>
+      <span class="skill">Protection de l'enfance</span>
+      <span class="skill">Développement communautaire</span>
+      <span class="skill">Parrainage</span>
+      <span class="skill">Suivi de terrain</span>
+      <span class="skill">Observation</span>
+      <span class="skill">Supervision</span>
+      <span class="skill">Travail en équipe</span>
+      <span class="skill">Communication</span>
+      <span class="skill">Apprentissage continu</span>
 
     </div>
-
-
-    <div class="grille" style="margin-top:30px;">
-
-      <div class="carte">
-
-        <h3>Langues</h3>
-
-        <ul>
-          <li>Français : courant</li>
-          <li>Anglais : basique</li>
-          <li>Fulfulde et haoussa : intermédiaire</li>
-        </ul>
-
-      </div>
-
-
-      <div class="carte">
-
-        <h3>Certifications</h3>
-
-        <p>
-          Certificats de GN Academic, AGORA UNICEF,
-          Rapha-Psy Sahel et Kaya UNHCR.
-        </p>
-
-      </div>
-
-    </div>
-
   </section>
 
 
-  <!-- GALERIE -->
-  <section id="galerie">
-
-    <h2>En images</h2>
-
-    <div class="galerie">
-
-      <img
-        src="photo-felix-kodji.jpg"
-        alt="Félix Kodji — portrait professionnel"
-      >
-
-      <img
-        src="photo-felix-kodji-2.jpg"
-        alt="Félix Kodji au travail"
-      >
-
-    </div>
-
-  </section>
-
-
-  <!-- CV -->
-  <section id="cv">
-
-    <h2>Mon CV</h2>
-
-    <div class="carte">
-
-      <h3>Curriculum Vitae — Félix Kodji</h3>
-
-      <p>
-        Consultez mon curriculum vitae pour découvrir plus en détail
-        mon parcours académique, mes expériences professionnelles,
-        mes compétences et mes formations.
-      </p>
-
-      <a
-        href="CV-KODJI-FELIX.pdf"
-        target="_blank"
-        class="bouton"
-        style="background:#1769aa;color:white;"
-      >
-        📄 Consulter mon CV
-      </a>
-
-    </div>
-
-  </section>
-
-
-  <!-- PERSPECTIVES -->
   <section id="perspectives">
-
     <h2>Perspectives professionnelles</h2>
 
     <p>
-      Animé par une volonté constante d'apprentissage, Félix Kodji
-      continue de renforcer ses connaissances dans les domaines de
-      la psychologie, de la protection de l'enfance et de l'action
-      humanitaire.
+      Félix Kodji poursuit son apprentissage et approfondit ses
+      connaissances dans les domaines de la psychologie et de la
+      protection de l'enfance.
     </p>
 
     <p>
-      Son ambition est de contribuer à des programmes ayant un impact
-      social durable et de continuer à développer progressivement ses
-      responsabilités professionnelles dans le secteur humanitaire.
+      Il souhaite continuer à développer son expérience dans le secteur
+      humanitaire, assumer progressivement de nouvelles responsabilités
+      et contribuer à des projets ayant un impact social positif.
     </p>
 
+    <p>
+      Son parcours s'inscrit ainsi dans une démarche d'apprentissage
+      continu, de développement professionnel et d'engagement auprès
+      des communautés.
+    </p>
   </section>
 
 
-  <!-- CONTACT -->
   <section id="contact">
-
     <h2>Contact</h2>
 
-    <div class="contact">
+    <p>
+      Pour toute prise de contact professionnelle, collaboration ou
+      échange, vous pouvez utiliser les coordonnées ci-dessous.
+    </p>
 
+    <div class="contact-grid">
 
-      <div class="carte">
-
-        <h3>📧 E-mail</h3>
-
-        <p>
-          <a href="mailto:felixkodji3@gmail.com">
-            felixkodji3@gmail.com
-          </a>
-        </p>
-
+      <div class="contact-card">
+        <strong>📍 Localisation</strong>
+        Maroua, Cameroun
       </div>
 
-
-      <div class="carte">
-
-        <h3>📱 WhatsApp</h3>
-
-        <p>
-          <a
-            href="https://wa.me/237657767138"
-            target="_blank"
-          >
-            +237 657 76 71 38
-          </a>
-        </p>
-
+      <div class="contact-card">
+        <strong>📧 E-mail</strong>
+        <a href="mailto:felixkodji3@gmail.com">
+          felixkodji3@gmail.com
+        </a>
       </div>
 
-
-      <div class="carte">
-
-        <h3>🔗 LinkedIn</h3>
-
-        <p>
-          <a
-            href="https://www.linkedin.com/in/félix-kodji-3950703"
-            target="_blank"
-          >
-            Voir mon profil LinkedIn
-          </a>
-        </p>
-
+      <div class="contact-card">
+        <strong>📱 WhatsApp</strong>
+        <a href="https://wa.me/237657767138">
+          +237 657 76 71 38
+        </a>
       </div>
 
-
-      <div class="carte">
-
-        <h3>📍 Localisation</h3>
-
-        <p>
-          Maroua, Extrême-Nord, Cameroun
-        </p>
-
+      <div class="contact-card">
+        <strong>💼 LinkedIn</strong>
+        <a href="https://www.linkedin.com/in/félix-kodji-3950703" target="_blank">
+          Profil LinkedIn
+        </a>
       </div>
-
 
     </div>
 
+    <a
+      class="linkedin"
+      href="https://www.linkedin.com/in/félix-kodji-3950703"
+      target="_blank"
+    >
+      Voir mon profil LinkedIn
+    </a>
+
   </section>
 
+</main>
 
-  <!-- PIED DE PAGE -->
-  <footer>
 
-    <h3 style="color:white;">
-      Félix Kodji
-    </h3>
-
-    <p>
-      Psychologie · Action humanitaire · Protection de l'enfance
-    </p>
-
-    <p>
-      © 2026 Félix Kodji — Tous droits réservés.
-    </p>
-
-  </footer>
+<footer>
+  <p><strong>Félix Kodji</strong></p>
+  <p>Psychologie • Action humanitaire • Protection de l'enfance</p>
+  <p>© 2026 Félix Kodji — Tous droits réservés.</p>
+</footer>
 
 </body>
 </html>
